@@ -1,6 +1,8 @@
 // Copyright 2016-2018 Chris Conway (Koderz). All Rights Reserved.
 
 using UnrealBuildTool;
+using System.IO;
+
 
 public class RuntimeMeshComponentEditor : ModuleRules
 {
@@ -8,21 +10,8 @@ public class RuntimeMeshComponentEditor : ModuleRules
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicIncludePaths.AddRange(
-            new string[] {
-                "RuntimeMeshComponentEditor/Public"
-				// ... add public include paths required here ...
-			}
-            );
-
-
-        PrivateIncludePaths.AddRange(
-            new string[] {
-                "RuntimeMeshComponentEditor/Private",
-				// ... add other private include paths required here ...
-			}
-            );
-
+        PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Public"));
+        PrivateIncludePaths.Add(Path.Combine(ModuleDirectory, "Private"));
 
         PublicDependencyModuleNames.AddRange(
             new string[]
@@ -43,7 +32,6 @@ public class RuntimeMeshComponentEditor : ModuleRules
                 "Slate",
                 "SlateCore",
                 "RenderCore",
-                "ShaderCore",
                 "RHI",
                 "UnrealEd",
                 "LevelEditor",

@@ -221,7 +221,7 @@ public:
 
 	/** DEPRECATED! Use UpdateMeshSectionDualBuffer() instead.  Updates the dual buffer mesh section */
 	template<typename VertexType>
-	DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
+	UE_DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
 	void UpdateMeshSection(int32 SectionIndex, TArray<FVector>& VertexPositions, TArray<VertexType>& VertexData, ESectionUpdateFlags UpdateFlags = ESectionUpdateFlags::None)
 	{
 		UpdateMeshSectionDualBuffer(SectionIndex, VertexPositions, VertexData, UpdateFlags);
@@ -229,7 +229,7 @@ public:
 
 	/** DEPRECATED! Use UpdateMeshSectionDualBuffer() instead.  Updates the dual buffer mesh section */
 	template<typename VertexType>
-	DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
+	UE_DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
 	void UpdateMeshSection(int32 SectionIndex, TArray<FVector>& VertexPositions, TArray<VertexType>& VertexData, const FBox& BoundingBox, ESectionUpdateFlags UpdateFlags = ESectionUpdateFlags::None)
 	{
 		UpdateMeshSectionDualBuffer(SectionIndex, VertexPositions, VertexData, BoundingBox, UpdateFlags);
@@ -237,7 +237,7 @@ public:
 
 	/** DEPRECATED! Use UpdateMeshSectionDualBuffer() instead.  Updates the dual buffer mesh section */
 	template<typename VertexType>
-	DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
+	UE_DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
 	void UpdateMeshSection(int32 SectionIndex, TArray<FVector>& VertexPositions, TArray<VertexType>& VertexData, TArray<int32>& Triangles, ESectionUpdateFlags UpdateFlags = ESectionUpdateFlags::None)
 	{
 		UpdateMeshSectionDualBuffer(SectionIndex, VertexPositions, VertexData, Triangles, UpdateFlags);
@@ -245,7 +245,7 @@ public:
 
 	/** DEPRECATED! Use UpdateMeshSectionDualBuffer() instead.  Updates the dual buffer mesh section */
 	template<typename VertexType>
-	DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
+	UE_DEPRECATED(3.0, "UpdateMeshSection for dual buffer sections deprecated. Please use UpdateMeshSectionDualBuffer instead.")
 	void UpdateMeshSection(int32 SectionIndex, TArray<FVector>& VertexPositions, TArray<VertexType>& VertexData, TArray<int32>& Triangles, const FBox& BoundingBox, ESectionUpdateFlags UpdateFlags = ESectionUpdateFlags::None)
 	{
 		UpdateMeshSectionDualBuffer(SectionIndex, VertexPositions, VertexData, Triangles, BoundingBox, UpdateFlags);
